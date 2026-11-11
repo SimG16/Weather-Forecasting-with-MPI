@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #11c4a3, #96a5e6);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;  /* Ensure the body takes up at least the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Align content to the top to ensure it's not centered vertically */
+    overflow-y: auto;  /* Allow scrolling */
+}
+
+.p-6 {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 100%;
+    max-width: 1200px; /* Set a maximum width to avoid stretching too much on large screens */
+}
+
+h1 {
+    font-size: 24px;
+    color: #00745e;
+    margin-bottom: 10px;
+}
+
+label {
+    color: #00745e;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+select {
+    background-color: #00745e;
+    width: 20%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00745e;
+}
+
+p {
+    color: #00745e;
+    font-size: 16px;
+}
+
+.border {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;  /* Add margin for better separation */
+}
+
+th, td {
+    padding: 15px; /* Adjusted padding for better spacing */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    font-weight: bold;
+    color: #00745e;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Ensure content fits on smaller screens */
+@media (max-width: 768px) {
+    select {
+        width: 60%;  /* Make the select dropdown wider for smaller screens */
+    }
+
+    table {
+        font-size: 12px;  /* Decrease font size for smaller screens */
+    }
+
+    .p-6 {
+        width: 90%;  /* Allow the main container to take up more width */
+    }
+}

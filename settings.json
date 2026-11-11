@@ -1,0 +1,8 @@
+{
+    "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
+    "files.associations": {
+        "ws2tcpip.h": "c",
+        "stdio.h": "c"
+    },
+    "workbench.colorTheme": "Visual Studio Light"
+}

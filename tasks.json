@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc.exe build active file",
+			"command": "C:/msys64/ucrt64/bin/gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"C:/Users/sangh/Desktop/Capstone-V3-20250314T035302Z-001/Capstone-V3/capstone/backend/csvparser.c",  // Reference the active file (csvparser.c)
+				"-I", "C:/msys64/mingw64/include",  // Path where microhttpd.h is located
+                "-L", "C:/msys64/mingw64/lib",  // Path where libmicrohttpd.a is located
+                "-I", "C:/Program Files (x86)/Microsoft SDKs/MPI/Include",  // Path to MPI headers
+                "-L", "C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64",  // Path to MPI libraries
+                "-o", "C:/Users/sangh/Desktop/Capstone-V3-20250314T035302Z-001/Capstone-V3/capstone/backend/weather_server.exe",  // Output file
+                "-lmicrohttpd",  // Link with libmicrohttpd
+                "-lmsmpi",  // Link with Microsoft's MPI library (using -lmsmpi for msmpi.lib)
+                "-lm"  // Link with math library
+			],
+			"options": {
+				"cwd": "C:/msys64/ucrt64/bin"  // Set working directory
+			},
+			"problemMatcher": [
+				"$gcc"  // Use GCC problem matcher
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:/msys64/ucrt64/bin/gcc.exe"
+		}
+	]
+}
